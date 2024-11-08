@@ -57,88 +57,64 @@
   
 }
 
-/* Estilos para pantallas pequeñas (teléfonos) */
-@media (max-width: 1200px) {
-    body{
-        grid-template-columns: 70px 1fr;
-    }
+/* Para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    /* Estilos específicos para pantallas de escritorio grandes */
     .header {
-      width: 100%; /* Aseguras que ocupe todo el ancho en pantallas pequeñas */
-      height: auto; /* Permites que la altura sea dinámica */
-      padding: 10px; /* Reduce padding */
+      flex-direction: row;
+
     }
+    .header__nav a {
+      margin: 0 15px;
+    }
+  }
   
+  /* Para pantallas medianas (tabletas) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    /* Estilos para tabletas */
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
     .header__nav {
-      flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-  
-    .footer {
-      grid-template-columns: 1fr; /* Acomoda los elementos del footer en una sola columna */
+    .hero__text-p {
+      font-size: 1.5em;
     }
-  
-    /* Asegura que los textos e inputs sean más legibles en móviles */
-    .footer__form input, 
-    .footer__form button {
-      width: 90%; /* Los botones y formularios se ajustan al contenedor */
+    .smoothie__box {
+      flex-direction: column;
+      align-items: center;
     }
   }
-
-
-  @media (max-width: 600px) {
+  
+  /* Para pantallas pequeñas (móviles) */
+  @media (max-width: 767px) {
+    /* Estilos para móviles */
     .header__logo {
-      font-size: 1.5rem; /* Reduce el tamaño en pantallas pequeñas */
-      text-align: center; /* Centra el texto para mejorar la presentación */
+      font-size: 1.2em;
     }
-  
-    .footer__links li {
-      font-size: 1rem; /* Textos más pequeños en listas del footer */
+    .header__nav {
+      display: none; /* Ocultar el menú en móvil */
     }
-  }
-
-
-
-  /* Adaptación general para pantallas medianas */
-@media (max-width: 768px) {
-    /* Ajusta el tamaño de fuente y el espaciado en todos los textos */
-    .hero__text, .smoothie__text-one, .fruit__elemet-text, .smoothie-green__text-one,
-    .sugar_text-one, .chef__text-main, .favorite-smoothie__text-main, .membership__text-main {
-      font-size: 1.2em; /* Reduce el tamaño del texto en cada sección */
+    .header__icons {
+      display: flex;
+      flex-direction: column;
     }
-  
-  
-    /* Mejora el espaciado de botones y el padding de secciones */
-    .smoothie__button, .fruit__button-one, .smoothie-green__box-two_text, 
-    .sugar__button-one, .chef__button, .favorite-smoothie__button, .membership__button {
-      padding: 8px 16px;
-      font-size: 0.9em;
+    .hero__content {
+      text-align: center;
     }
-  
-    /* Centrar el contenido en las secciones que lo requieran */
-    section {
+    .smoothie__box {
       padding: 20px;
       text-align: center;
     }
-  }
-  
-  /* Adaptación para pantallas pequeñas */
-  @media (max-width: 480px) {
-    /* Tamaño de fuente aún más reducido y menos margen */
-    .hero__text, .smoothie__text-one, .fruit__elemet-text, .smoothie-green__text-one,
-    .sugar_text-one, .chef__text-main, .favorite-smoothie__text-main, .membership__text-main {
-      font-size: 1em;
+    .footer__menu {
+      flex-direction: column;
+      align-items: center;
     }
-  
-    /* Ajustes adicionales de padding */
-    .smoothie__button, .fruit__button-one, .sugar__button-one, .chef__button,
-    .favorite-smoothie__button, .membership__button {
-      padding: 6px 12px;
-      font-size: 0.8em;
-    }
-  
-    /* Centrar el texto en botones que tienen íconos y texto */
-    button p {
-      margin: 0;
+    .footer__signup {
+      text-align: center;
     }
   }
-  
