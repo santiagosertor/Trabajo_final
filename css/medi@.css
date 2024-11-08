@@ -58,7 +58,10 @@
 }
 
 /* Estilos para pantallas pequeñas (teléfonos) */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    body{
+        grid-template-columns: 70px 1fr;
+    }
     .header {
       width: 100%; /* Aseguras que ocupe todo el ancho en pantallas pequeñas */
       height: auto; /* Permites que la altura sea dinámica */
@@ -103,11 +106,6 @@
       font-size: 1.2em; /* Reduce el tamaño del texto en cada sección */
     }
   
-    /* Ajustes para imágenes dentro de cada sección */
-    .smoothie__image, .smoothie-green__img, .favorite-smoothie__img, .favorite-smoothie__img-two {
-      width: 100%;
-      height: auto;
-    }
   
     /* Mejora el espaciado de botones y el padding de secciones */
     .smoothie__button, .fruit__button-one, .smoothie-green__box-two_text, 
