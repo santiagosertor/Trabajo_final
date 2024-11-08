@@ -6,7 +6,7 @@
 .hero {
     grid-area: hero;
     text-align: left;
-    background-image: url(/img/fondo1.png);
+    background-image: url(../img/fondo1.png);
     height:120vh ;
     background-size:  contain;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@
   .fruit__box {
     grid-area: fruit;
     height: 120vh;  
-    background-image: url(/img/fondo3.png);
+    background-image: url(../img/fondo3.png);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -390,7 +390,7 @@
     padding: 50px;
     margin-top: 20px;
     height:118vh ;
-    background-image: url(/img/fondo5.png);
+    background-image: url(../img/fondo5.png);
     background-size: cover;
     background-repeat: no-repeat;
   
@@ -709,7 +709,7 @@
   .membership__box {
     grid-area: deli ;
     height: 100vh;
-    background-image: url(/img/fondo8.png);
+    background-image: url(../img/fondo8.png);
     background-size: cover;
     background-repeat: no-repeat;
   
