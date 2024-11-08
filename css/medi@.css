@@ -1,0 +1,146 @@
+@media (hover: hover){
+    .hero__button{
+      background-color: var(--color-naranja-claro);
+      transition: 2s;
+    }
+    .smoothie__button{
+      background-color: var(--color-naranja-claro);
+      transition: 1s; 
+    }
+
+    .fruit__button-three{
+        background-color: var(--color-naranja-claro);
+        transition: 1s;
+    }
+
+    .sugar__button-one:hover {
+        background-color: var(--color-naranja-claro);
+        color: var(--color-white);
+        transition: 1s;
+    }
+    .sugar__button-two:hover {
+        background-color: var(--color-naranja-claro);
+        color: var(--color-white);
+        transition: 1s;
+    }
+
+    .chef__button:hover {
+        background-color: var(--color-naranja-claro);
+        transition: 1s;
+    }
+
+    .favorite-smoothie__button-one:hover{
+        background-color: var(--color-naranja-claro);
+        color: var(--color-white);
+        transition: 1s;
+    }
+
+    .favorite__button-two:hover{
+        background-color: var(--color-naranja-claro);
+        color: var(--color-white);
+        transition: 1s;
+    }
+
+    .membership__button:hover{
+        background-color: var(--color-orange);
+        color: var(--color-white);
+        transition: 1s;
+    }
+
+    .footer__form button:hover {
+        background-color: var(--color-orange);
+        color: var(--color-black);
+        transition: 1s;
+      }
+      
+  
+  
+}
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .header {
+      width: 100%; /* Aseguras que ocupe todo el ancho en pantallas pequeñas */
+      height: auto; /* Permites que la altura sea dinámica */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .header__nav {
+      flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
+      justify-content: center;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr; /* Acomoda los elementos del footer en una sola columna */
+    }
+  
+    /* Asegura que los textos e inputs sean más legibles en móviles */
+    .footer__form input, 
+    .footer__form button {
+      width: 90%; /* Los botones y formularios se ajustan al contenedor */
+    }
+  }
+
+
+  @media (max-width: 600px) {
+    .header__logo {
+      font-size: 1.5rem; /* Reduce el tamaño en pantallas pequeñas */
+      text-align: center; /* Centra el texto para mejorar la presentación */
+    }
+  
+    .footer__links li {
+      font-size: 1rem; /* Textos más pequeños en listas del footer */
+    }
+  }
+
+
+
+  /* Adaptación general para pantallas medianas */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de fuente y el espaciado en todos los textos */
+    .hero__text, .smoothie__text-one, .fruit__elemet-text, .smoothie-green__text-one,
+    .sugar_text-one, .chef__text-main, .favorite-smoothie__text-main, .membership__text-main {
+      font-size: 1.2em; /* Reduce el tamaño del texto en cada sección */
+    }
+  
+    /* Ajustes para imágenes dentro de cada sección */
+    .smoothie__image, .smoothie-green__img, .favorite-smoothie__img, .favorite-smoothie__img-two {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Mejora el espaciado de botones y el padding de secciones */
+    .smoothie__button, .fruit__button-one, .smoothie-green__box-two_text, 
+    .sugar__button-one, .chef__button, .favorite-smoothie__button, .membership__button {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  
+    /* Centrar el contenido en las secciones que lo requieran */
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* Adaptación para pantallas pequeñas */
+  @media (max-width: 480px) {
+    /* Tamaño de fuente aún más reducido y menos margen */
+    .hero__text, .smoothie__text-one, .fruit__elemet-text, .smoothie-green__text-one,
+    .sugar_text-one, .chef__text-main, .favorite-smoothie__text-main, .membership__text-main {
+      font-size: 1em;
+    }
+  
+    /* Ajustes adicionales de padding */
+    .smoothie__button, .fruit__button-one, .sugar__button-one, .chef__button,
+    .favorite-smoothie__button, .membership__button {
+      padding: 6px 12px;
+      font-size: 0.8em;
+    }
+  
+    /* Centrar el texto en botones que tienen íconos y texto */
+    button p {
+      margin: 0;
+    }
+  }
+  

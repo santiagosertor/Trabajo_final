@@ -1,0 +1,221 @@
+@import url(root.css);
+@import url(medi@.css);
+@import url(section.css);
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 0.8px;
+}
+
+body{
+    background-color: var(--color__principal);
+}
+
+.contenedor__layaout{
+    display: grid;
+    grid-template-areas: 
+    "header "
+    "hero"
+    "smoothie"
+    "fruit"
+    "smoothie-green"
+    "sugar"
+    "chef"
+    "favorite"
+    "deli"
+    "footer";
+    width: 100%;
+  
+    
+}
+
+/* Header */
+.header {
+  display: grid;
+  grid-area: header;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  align-items: var(--align-items);
+  padding: 2rem;
+  background-color:var(--color-gris);
+ box-shadow: 0 0 50px 0 var(--color-black);
+  
+}
+
+.header__logo {
+  width: 100%;
+  font-size: 40px;
+  text-align: var(--text-align);
+  font-weight: bold;
+  color: var(--color-orange);
+}
+.header__nav{
+  width: 60%;
+  padding-top: 30px;
+  margin-left: 100px;
+  
+}
+
+.header__nav a {
+  width: 20%;
+  flex-direction:var(--flex-direction-column);
+  color: var(--color-white);
+  font-size: 14px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.header__icons{
+  width: 40%;
+  display: flex;
+  justify-content: var(--justify-content-end);
+  transform: translate(135%, -70%);
+  
+}
+.header__icons-icons{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: var(--align-items);
+  justify-content: var(--justify-content-center);
+  margin: 0 5px;
+  font-size: 18px;
+  background-color: var(--color-white);
+  border-radius: 20%;
+  color: var(--color-black);
+}
+
+.header__icons span {
+  font-size: 14px;
+  display: flex;
+  margin: 0 10px;
+  justify-content: var(--justify-content-end);
+  color: var(--color-white);
+}
+
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-area: footer;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-gris);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  box-shadow: 10px 0 20px 0 var(--color-black);
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+}
+
+.footer__title {
+  grid-column: 1 / -1;
+  text-align: var(--text-align);
+  margin-bottom: 20px;
+}
+
+.footer__title h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-orange);
+  margin: 0;
+}
+
+.footer__title span {
+  font-size: 14px;
+  color: var(--color-gris-claro);
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: var(--flex-direction-column);
+  align-items: start;
+  padding-left: 150px; 
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: var(--flex-direction-row);
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+  display: flex;
+  align-items: var(--align-items);
+  justify-content: var(--justify-content-center);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 18px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-black);
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0; 
+  color: var(--color-gris-claro);
+}
+
+.footer__links li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer__signup {
+  display: flex;
+  flex-direction: var(--flex-direction-column);
+  align-items: flex-start;
+  margin-left: auto;
+  padding-top: 40px;
+      
+}
+
+.footer__signup h5 {
+  color: var(--color-orange);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: var(--flex-direction-column);
+  width: 100%;
+}
+
+.footer__form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  border-radius: 20px;
+}
+
+.footer__form button {
+  background-color: var(--color-naranja-claro);
+  color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer__form button:hover {
+  background-color: var(--color-orange);
+}
+

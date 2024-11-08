@@ -1,0 +1,27 @@
+:root{
+    --color-orange: orange;
+    --color-white: white;
+    --color-black: #000;
+    --color-blacks:#1A1A1A;
+    --color-gris: #3e3e3e;
+    --color-gris-claro:#b8b8b8;
+    --color-naranja-claro: #d77b3b;
+    --color-whiter: #f9f9f9;
+    --color-whites:#f1f1f1;
+    --color-ora-clean: #b68e76;
+ 
+    /* flex agregados */
+    --align-items: center;
+    --flex-direction-column:column ;
+    --flex-direction-row: row;
+    --justify-content-center:center;
+    --justify-content-end:end;
+    --text-align: center;
+    --position-relative:relative;
+
+    /* colores */
+    --color__principal:#f1e8e3;
+  
+    --img_tres:url(../img/fondo3.png);
+ 
+ }
