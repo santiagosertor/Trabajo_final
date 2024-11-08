@@ -6,7 +6,7 @@
 .hero {
     grid-area: hero;
     text-align: left;
-   background-image: url(/img/fondo1.png);
+    background-image: url(/img/fondo1.png);
     height:120vh ;
     background-size:  contain;
     background-repeat: no-repeat;
