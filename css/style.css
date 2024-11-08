@@ -37,8 +37,9 @@ body{
 .header {
   display: grid;
   grid-area: header;
+  max-width: 1200px;
   width: 80%;
-  margin: 0 auto;
+  margin:auto;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   align-items: var(--align-items);

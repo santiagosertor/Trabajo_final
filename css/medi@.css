@@ -57,64 +57,121 @@
   
 }
 
-/* Para pantallas grandes (desktops) */
-@media (min-width: 1024px) {
-    /* Estilos específicos para pantallas de escritorio grandes */
-    .header {
-      flex-direction: row;
+/* Estilos generales para dispositivos móviles */
+@media screen and (max-width: 767px) {
 
+    /* Ajustes generales */
+    body {
+      padding: 0;
+      margin: 0;
     }
-    .header__nav a {
-      margin: 0 15px;
-    }
-  }
   
-  /* Para pantallas medianas (tabletas) */
-  @media (max-width: 1023px) and (min-width: 768px) {
-    /* Estilos para tabletas */
-    .header {
+    header {
       flex-direction: column;
       align-items: center;
+      padding: 10px;
     }
-    .header__nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero__text-p {
-      font-size: 1.5em;
-    }
-    .smoothie__box {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
   
-  /* Para pantallas pequeñas (móviles) */
-  @media (max-width: 767px) {
-    /* Estilos para móviles */
-    .header__logo {
-      font-size: 1.2em;
-    }
-    .header__nav {
-      display: none; /* Ocultar el menú en móvil */
-    }
-    .header__icons {
-      display: flex;
+    header nav ul {
       flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 0;
     }
-    .hero__content {
-      text-align: center;
+  
+    header nav ul li {
+      margin: 5px 0;
     }
-    .smoothie__box {
+  
+    /* Hero section */
+    .hero {
       padding: 20px;
       text-align: center;
+      width: 100%;
     }
-    .footer__menu {
+  
+    /* Secciones individuales */
+    .section {
+      padding: 10px;
+    }
+  
+    /* Ajustes de dimensiones específicos */
+    .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8 {
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 10px;
       flex-direction: column;
       align-items: center;
     }
-    .footer__signup {
-      text-align: center;
+  
+    footer .iconos {
+      margin-bottom: 10px;
+    }
+  
+    footer form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    footer form input, footer form button {
+      width: 90%;
+      margin: 5px 0;
     }
   }
+  
+  /* Para tablets (ancho entre 768px y 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    /* Ajustes de estructura de header */
+    header {
+      padding: 15px;
+      justify-content: space-between;
+    }
+  
+    header nav ul {
+      flex-direction: row;
+    }
+  
+    /* Secciones en grid de dos columnas */
+    .section-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  
+    .section {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 15px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    footer .iconos {
+      flex: 1;
+    }
+  
+    footer form {
+      flex: 1;
+      align-items: flex-end;
+    }
+  
+    footer form input, footer form button {
+      width: 80%;
+      margin: 5px 0;
+    }
+  }
+  
