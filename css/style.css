@@ -4,21 +4,21 @@
 
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
-    letter-spacing: 0.8px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.8px;
 }
 
 body{
-    background-color: var(--color__principal);
+ background-color: var(--color__principal);
+ overflow-x: hidden;
 }
 
 .contenedor__layaout{
     display: grid;
     grid-template-areas: 
-    "header "
+    "header"
     "hero"
     "smoothie"
     "fruit"
@@ -37,15 +37,17 @@ body{
 .header {
   display: grid;
   grid-area: header;
-  max-width: 1200px;
   width: 80%;
-  margin:auto;
+  height: 30%;
+  margin: 0 auto;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   align-items: var(--align-items);
   padding: 2rem;
   background-color:var(--color-gris);
- box-shadow: 0 0 50px 0 var(--color-black);
+  box-shadow: 0 0 50px 0 var(--color-black);
+  position: fixed;
+  
   
 }
 
@@ -63,7 +65,7 @@ body{
   
 }
 
-.header__nav a {
+.header__nav-a {
   width: 20%;
   flex-direction:var(--flex-direction-column);
   color: var(--color-white);
@@ -112,6 +114,7 @@ body{
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   box-shadow: 10px 0 20px 0 var(--color-black);
+  
 }
 
 .footer__content {
