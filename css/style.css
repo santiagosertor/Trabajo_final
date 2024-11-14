@@ -17,6 +17,13 @@ body{
     max-width: 100%; /* Limita el ancho máximo al 100% */
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Elimina el scroll horizontal */
+  width: 100%;
+}
+
 .contenedor__layaout{
     display: grid;
     grid-template-areas: 
@@ -458,7 +465,13 @@ body{
     .smoothie-green__text-one {
       font-size: 25px;
     }
-  
+    .smoothie-green__element-last {
+      position: relative; /* Deja que fluya con el diseño */
+     transform: translate(-70%, 50%);
+    font-size: 6px;
+    
+    }
+
     /* Ajustes para la sección sugar */
     .sugar__box {
       height: auto;
@@ -492,6 +505,38 @@ body{
     .chef__text-main {
       font-size: 20px;
     }
+
+
+
+    .membership__elements {
+      width: 80%; /* Ajuste de ancho */
+      left: 10%; /* Alineación */
+      top: 20%; /* Alineación vertical */
+  }
+
+  .membership__text-main {
+      font-size: 50px; /* Reducir el tamaño de fuente */
+      width: 100%; /* Eliminar el ancho limitado */
+      text-align: center; /* Centrado */
+  }
+
+  .membership__text-secundary {
+      font-size: 20px; /* Reducir el tamaño de fuente */
+      width: 100%; /* Eliminar el ancho limitado */
+      text-align: center; /* Centrado */
+  }
+
+  .membership__button {
+      width: 50%; /* Ajuste de ancho */
+      font-size: 14px; /* Reducir tamaño de fuente */
+      transform: translate(160px, 1px);
+      }
+
+  .membership__p {
+      width: 100%; /* Eliminar el ancho limitado */
+      font-size: 12px; /* Aumentar tamaño de fuente */
+      text-align: center; /* Centrado */
+  }
 }
 
 
