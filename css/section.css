@@ -2,66 +2,53 @@
 @import url(medi@.css);
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Hero Section */
-.hero {
-  grid-area: hero;
-  text-align: left;
-  /* background-image: url(../img/fondo1.png);
-  height:100vh ;
-  background-size:  cover;
-  width: 100%;
-  background-repeat: no-repeat; */
-  overflow: hidden;
-  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-
-
+.hero{
+  width: 100%;
+  background-image: url(../img/fondo1.png);
+  height: 1300px;
+  background-size: cover;
+}
+  .hero__content {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
   
-
+    margin-left: 60%;
+    margin-top: 200px;
+    width: 25%;
+    height: auto;
   
-.hero__img {
-   width: 100%;
-   overflow: hidden;
-    z-index: 1;
-   
-   
-  
-  }
-.hero__content {
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    color: var(--color-gris);
-    position: absolute;
-    justify-content: var(--justify-content-center);
-    flex-direction: var(--flex-direction-column);
-    
   }
   
   .hero__text {
     font-size: 30px;
     font-weight: 15;
-    margin: 15px;
-    padding-bottom: 10px;
+    width: 300px;
   }
   
   .hero__text-p {
     font-size: 25px;
-    margin: 15px;
-    padding-bottom: 15px;
+    width: 40%;
+    justify-content: flex-start;
+    margin-top: 18px;
+   margin-right: 20%;
+
   }
   
   .hero__button {
+    margin-top: 20px;
     background-color:var(--color-ora-clean);
     color: var(--color-white);
     border: none;
-    padding: 10px 20px;    
+    padding: 10px 50px;    
     cursor: pointer;
-    margin-top: 10px;
-    margin: auto;
-    padding-bottom: 15px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     margin-top: 10px;
   }
   .hero__button:hover {
@@ -71,7 +58,80 @@
     font-size: 15px;
     
   }
+  .header {
+    display: grid;
+    grid-area: header;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    align-items: var(--align-items);
+    padding: 2rem;
+    background-color:var(--color-gris);
+   box-shadow: 0 0 50px 0 var(--color-black);
   
+  }
+  
+  .header__logo {
+    width: 100%;
+    font-size: 60px;
+    text-align: var(--text-align);
+    font-weight: bold;
+    color: var(--color-orange);
+    margin-top: 4%;
+    
+  }
+  .header__nav{
+    width: 60%;
+    padding-top: 30px;
+    margin-left: 100px;
+    
+  }
+  
+  .header__nav-a {
+    width: 20%;
+    flex-direction:var(--flex-direction-column);
+    color: var(--color-white);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    justify-content: space-between;
+    
+    
+    
+    
+  }
+  
+  .header__icons{
+    width: 40%;
+    display: flex;
+    justify-content: var(--justify-content-end);
+    transform: translate(230%, -70%);
+    
+  }
+  .header__icons-one{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: var(--align-items);
+    justify-content: var(--justify-content-center);
+    margin: 0 5px;
+    font-size: 18px;
+    background-color: var(--color-white);
+    border-radius: 20%;
+    color: var(--color-black);
+  }
+  
+  .header__span {
+    font-size: 15px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: var(--justify-content-end);
+    color: var(--color-white);  
+    margin-left: 8px;
+    
+  }
   
 
 /* section 2  */
@@ -81,8 +141,7 @@
     padding: 50px;
     height: 100vh;
     justify-content: var(--justify-content-center);
-    margin-top: 8%;
-  
+   border: 1px solid;
   
   }
   .smoothie__element{
@@ -95,7 +154,8 @@
    box-shadow: -20px 0px 40px -25px var(--color-black);
    justify-content: var(--justify-content-center);
    padding-right: 10px;
-   
+   margin-top: 5%;
+   margin-left: 10%;
   
   }
   .smoothie__texts {
@@ -171,43 +231,52 @@
     width: 85%;
    position: relative;
     left: 7%;
-    z-index: 1;
+    /* z-index: 1; */
   }
-
+ .smoothie__span{
+  position: relative;
+  top: 70%;
+  left: -12px;
+  justify-content: center;
+  
+ }
   
   /* section 3  */
   
   .fruit__box {
     grid-area: fruit;
-    height: 120vh;  
+    height: 1100px;  
     background-image: url(../img/fondo3.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid;
     
    
   }
   .fruit__elemet{
-   transform: translate(35%, 150%);
+   
     margin-top: 20%;
     left: 50%;
     top: 50%;
-    width: 30%;
+    width: 40%;
+    height: 40%;
     margin-left: 35%;
+    
   }
    
   .fruit__elemet-text{
-   position: var(--position-relative);
+   position: relative;
    color: var(--color-blacks);
    font-family: Georgia, 'Times New Roman', Times, serif;
-   left: 50%;
-   font-size: 30px;
+   left: 20%;
+   font-size: 45px;
    font-weight: bold;
    
   }
   .fruit__elemet-two{
   
-    font-size: 20px;
-    left: 50%;
+    font-size: 25px;
+    left: 20%;
     position: var(--position-relative);
     margin-top: 10px;
     width: 50%;
@@ -216,7 +285,8 @@
     align-items: var(--align-items);
     flex-direction: var(--flex-direction-column);
     position: var(--position-relative);
-    left:30% ;
+    left:10% ;
+    top: 10%;
     display: flex;
     padding-top: 30px;
   
@@ -228,8 +298,8 @@
     color: var(--color-black);
     background-color: var(--color-white);
     border: none;
-    height: 25px ;
-    width: 50%;
+    height: 40px ;
+    width: 45%;
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
   
@@ -238,15 +308,17 @@
     
     text-align: start ;
     padding-left: 10px;
+    margin-left: 20px;
     font-weight: bold;
+    
     
   }
   .fruit__button-two{
     color: var(--color-black);
     background-color: var(--color-white);
     border: none;
-    height: 25px ;
-    width: 50%;
+    height: 40px ;
+    width: 45%;
     border-radius: 20px 20px 20px 20px;
     
   }
@@ -262,7 +334,7 @@
     border-radius: 20px 20px 20px 20px;
     margin-top: 10px;
     height: 35px ;
-    width: 50%;
+    width: 45%;
    font-weight: bold;
       
   }
@@ -271,8 +343,8 @@
   }
   .fruit-last__text{
     font-size: 10px;
-    width: 50%;
-    margin-left: 30px;
+    width: 40%;
+    margin-left: 10px;
     padding-top: 10px;
     
   }
