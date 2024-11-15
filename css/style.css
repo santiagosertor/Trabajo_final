@@ -243,7 +243,64 @@ background-color: var(--color__principal);
   background-color: var(--color-orange);
 }
 
+@media (hover: hover){
+  .hero__button{
+    background-color: var(--color-naranja-claro);
+    transition: 2s;
+  }
+  .smoothie__button{
+    background-color: var(--color-naranja-claro);
+    transition: 1s; 
+  }
 
+  .fruit__button-three{
+      background-color: var(--color-naranja-claro);
+      transition: 1s;
+  }
+
+  .sugar__button-one:hover {
+      background-color: var(--color-naranja-claro);
+      color: var(--color-white);
+      transition: 1s;
+  }
+  .sugar__button-two:hover {
+      background-color: var(--color-naranja-claro);
+      color: var(--color-white);
+      transition: 1s;
+  }
+
+  .chef__button:hover {
+      background-color: var(--color-naranja-claro);
+      transition: 1s;
+  }
+
+  .favorite-smoothie__button-one:hover{
+      background-color: var(--color-naranja-claro);
+      color: var(--color-white);
+      transition: 1s;
+  }
+
+  .favorite__button-two:hover{
+      background-color: var(--color-naranja-claro);
+      color: var(--color-white);
+      transition: 1s;
+  }
+
+  .membership__button:hover{
+      background-color: var(--color-orange);
+      color: var(--color-white);
+      transition: 1s;
+  }
+
+  .footer__form button:hover {
+      background-color: var(--color-orange);
+      color: var(--color-black);
+      transition: 1s;
+    }
+    
+
+
+}
 
 /* Responsividad para pantallas pequeñas (celulares) */
 @media screen and (max-width: 768px) {
