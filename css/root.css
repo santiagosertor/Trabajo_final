@@ -1,5 +1,5 @@
 :root{
-    --color-orange: #b68e76;
+    --color-piel: #b68e76;
     --color-white: white;
     --color-black: #000;
     --color-blacks:#1A1A1A;
@@ -15,7 +15,7 @@
     --flex-direction-column:column ;
     --flex-direction-row: row;
     --justify-content-center:center;
-    --justify-content-end:end;
+    --justify-content-end:space-between;
     --text-align: center;
     --position-relative:relative;
 
